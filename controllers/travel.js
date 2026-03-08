@@ -1,6 +1,7 @@
 'use strict';
 
 import logger from '../utils/logger.js';
+import TavelStore from '../models/travel-store.js';
 
 const travel = {
     createView(request, response) {
@@ -8,7 +9,8 @@ const travel = {
        logger.debug(`Destination id = ${destinationId}`);
 
         const viewData = {
-            title: 'Destination'
+            title: 'Destination',
+            singleDestination: TravelStore.getDestination(destinationId)
         };
         response.render('travel', viewData);
     },

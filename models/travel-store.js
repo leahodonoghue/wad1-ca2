@@ -12,6 +12,9 @@ const TravelStore = {
     getAllTravelDestinations() {
         return this.store.findAll(this.collection);
     },
+    getDestination(id) {
+        return this.store.findOneBy(this.collection, (destination => destination.id === id));
+    },
 };
 
 export default TravelStore;
