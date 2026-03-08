@@ -1,0 +1,100 @@
+{
+    "TravelDestinations": [
+        {
+            "id" : "01",
+            "country": "Spain",
+            "destinations": [
+                {
+                    "id" : "05",
+                    "city": "Barcelona",
+                    "type": "Coastal City",
+                    "popular": "Sagrada Familia"
+                },
+                {
+                    "id" : "06",
+                    "city": "Madrid",
+                    "type": "Capital City",
+                    "popular": "museums"
+                },
+                {
+                    "id" : "07",
+                    "city": "Valencia",
+                    "type": "Coastal City",
+                    "popular": "Futuristic Architecture "
+                }
+            ]
+        },
+        {
+            "id" : "02",
+            "country": "Italy",
+            "destinations": [
+                {
+                    "id" : "08",
+                    "city": "Rome",
+                    "type": "Capital City",
+                    "popular": "Colosseum"
+                },
+                {
+                    "id" : "09",
+                    "city": "Venice",
+                    "type":"Coastal City",
+                    "popular": "Canals"
+                },
+                {
+                    "id" : "10",
+                    "city": "Florence",
+                    "type": "City Break",
+                    "popular": "Renaissance Art"
+                }
+            ]
+        },
+        {
+            "id" : "03",
+            "country": "France",
+            "destinations": [
+                {
+                    "id" : "11",
+                    "city": "Paris",
+                    "type": "City Break",
+                    "popular": "Eiffel Tower"
+                },
+                {
+                    "id" : "12",
+                    "city": "Bordeaux",
+                    "type":"City Break",
+                    "popular": "Wine"
+                },
+                {
+                    "id" : "13",
+                    "city": "Marseille",
+                    "type": "Port City",
+                    "popular": "Diverse cusine"
+                }
+            ]
+        },
+        {
+            "id" : "04",
+            "country": "United States of America",
+            "destinations": [
+                {
+                    "id" : "14",
+                    "city": "New York",
+                    "type": "City Break",
+                    "popular": "Times Square"
+                },
+                {
+                    "id" : "15",
+                    "city": "Miami",
+                    "type":"Coastal City",
+                    "popular": "Miami Beach"
+                },
+                {
+                    "id" : "17",
+                    "city": "Los Angeles",
+                    "type": "Coastal City",
+                    "popular" : "Hollywood"
+                }
+            ]
+        }
+    ]
+}
