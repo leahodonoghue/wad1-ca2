@@ -9,19 +9,21 @@
                     "city": "Barcelona",
                     "type": "Coastal City",
                     "popular": "Sagrada Familia",
-                    "image" : "/Barcelona.webp"
+                    "image" : "Barcelona.webp"
                 },
                 {
                     "id" : "07",
                     "city": "Madrid",
                     "type": "Capital City",
-                    "popular": "museums"
+                    "popular": "museums",
+                    "image" : "madrid.jpg"
                 },
                 {
                     "id" : "08",
                     "city": "Valencia",
                     "type": "Coastal City",
-                    "popular": "Futuristic Architecture "
+                    "popular": "Futuristic Architecture ",
+                    "image" : "valencia.jpg"
                 }
             ]
         },
@@ -33,19 +35,22 @@
                     "id" : "09",
                     "city": "Rome",
                     "type": "Capital City",
-                    "popular": "Colosseum"
+                    "popular": "Colosseum",
+                    "image" : "rome.webp"
                 },
                 {
                     "id" : "11",
                     "city": "Venice",
                     "type":"Coastal City",
-                    "popular": "Canals"
+                    "popular": "Canals",
+                    "image" : "venice.jpg"
                 },
                 {
                     "id" : "10",
                     "city": "Florence",
                     "type": "City Break",
-                    "popular": "Renaissance Art"
+                    "popular": "Renaissance Art",
+                    "image" : "florence.avif"
                 }
             ]
         },
@@ -57,19 +62,22 @@
                     "id" : "12",
                     "city": "Paris",
                     "type": "City Break",
-                    "popular": "Eiffel Tower"
+                    "popular": "Eiffel Tower",
+                    "image" : "paris.webp"
                 },
                 {
                     "id" : "13",
                     "city": "Bordeaux",
                     "type":"City Break",
-                    "popular": "Wine"
+                    "popular": "Wine",
+                    "image" : "bordeaux.jpg"
                 },
                 {
                     "id" : "14",
                     "city": "Marseille",
                     "type": "Port City",
-                    "popular": "Diverse cusine"
+                    "popular": "Diverse cusine",
+                    "image" : "marseille.jpg"
                 }
             ]
         },
@@ -81,19 +89,23 @@
                     "id" : "15",
                     "city": "New York",
                     "type": "City Break",
-                    "popular": "Statue of Liberty"
+                    "popular": "Statue of Liberty",
+                    "image" : "newyork.jpg"
                 },
                 {
                     "id" : "16",
                     "city": "Miami",
                     "type":"Coastal City",
-                    "popular": "Miami Beach"
+                    "popular": "Miami Beach",
+                    "image" : "miami.webp"
                 },
                 {
                     "id" : "17",
                     "city": "Los Angeles",
                     "type": "Coastal City",
-                    "popular" : "Hollywood"
+                    "popular" : "Hollywood",
+                    "image" : "losangeles.jpeg"
+                    
                 }
             ]
         },
