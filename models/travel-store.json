@@ -5,19 +5,19 @@
             "country": "Spain",
             "destinations": [
                 {
-                    "id" : "05",
+                    "id" : "06",
                     "city": "Barcelona",
                     "type": "Coastal City",
                     "popular": "Sagrada Familia"
                 },
                 {
-                    "id" : "06",
+                    "id" : "07",
                     "city": "Madrid",
                     "type": "Capital City",
                     "popular": "museums"
                 },
                 {
-                    "id" : "07",
+                    "id" : "08",
                     "city": "Valencia",
                     "type": "Coastal City",
                     "popular": "Futuristic Architecture "
@@ -29,13 +29,13 @@
             "country": "Italy",
             "destinations": [
                 {
-                    "id" : "08",
+                    "id" : "10",
                     "city": "Rome",
                     "type": "Capital City",
                     "popular": "Colosseum"
                 },
                 {
-                    "id" : "09",
+                    "id" : "11",
                     "city": "Venice",
                     "type":"Coastal City",
                     "popular": "Canals"
@@ -53,19 +53,19 @@
             "country": "France",
             "destinations": [
                 {
-                    "id" : "11",
+                    "id" : "12",
                     "city": "Paris",
                     "type": "City Break",
                     "popular": "Eiffel Tower"
                 },
                 {
-                    "id" : "12",
+                    "id" : "13",
                     "city": "Bordeaux",
                     "type":"City Break",
                     "popular": "Wine"
                 },
                 {
-                    "id" : "13",
+                    "id" : "14",
                     "city": "Marseille",
                     "type": "Port City",
                     "popular": "Diverse cusine"
@@ -77,13 +77,13 @@
             "country": "United States of America",
             "destinations": [
                 {
-                    "id" : "14",
+                    "id" : "15",
                     "city": "New York",
                     "type": "City Break",
                     "popular": "Times Square"
                 },
                 {
-                    "id" : "15",
+                    "id" : "16",
                     "city": "Miami",
                     "type":"Coastal City",
                     "popular": "Miami Beach"
@@ -95,6 +95,11 @@
                     "popular" : "Hollywood"
                 }
             ]
+        },
+        {
+            "id" : "05",
+            "country": "country not added",
+            "destinations": []
         }
     ]
 }
