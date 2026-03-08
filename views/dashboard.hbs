@@ -4,16 +4,13 @@
 
    <h2>Travel Destination App Dashboard</h2>
    
-   <section class="ui left aligned middle aligned segment">
-       <h3 class="ui header">
-        {{destinations.0.country}}
-       </h3>
-   </section>
+ {{#each destinations}}
 
-     <section class="ui left aligned middle aligned segment">
-       <h3 class="ui header">
-        {{destinations.1.country}}
-       </h3>
-   </section>
+ <section class="ui left aligned middle aligned scrolling segment">
+   <h3 class="ui header">
+       {{country}}
+   </h3>
+ </section>
 
+ {{/each}}
 </section>
