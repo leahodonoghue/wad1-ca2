@@ -1,33 +1,21 @@
 {{#if singleDestination.destinations}}
-
-  <table class="ui unstackable striped table">
-    <thead>
-      <tr>
-        <th>City</th>
-        <th>Type</th>
-        <th>Famous For</th>
-        <th>image</th>
-      </tr>
-    </thead>
-    <tbody>
       {{#each singleDestination.destinations}}
-        <tr>
-          <td>
-            {{city}}
-          </td>
-          <td>
-            {{type}}
-          </td>
-           <td>
-            {{popular}}
-          </td>
-          <td>
-            <img src="/{{image}}" alt="{{city}}" width="100">
-          </td>
-        </tr>
-      {{/each}}
-    </tbody>
-  </table>
+      <div class="ui centered card">
+        <div class="image">
+            <img src="/{{image}}" alt="{{city}}">
+        </div>
+
+        <div class="content">
+            <a class="header">{{city}}</a>
+            <div class="meta">
+                Type: {{type}}
+            </div>
+            <div class="description">
+                Famous For: {{popular}}
+            </div>
+        </div>
+</div>
+ 
 
   {{else}}
     <h3 class="ui message">
