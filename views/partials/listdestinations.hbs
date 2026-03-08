@@ -1,0 +1,33 @@
+{{#if singleDestination.destination}}
+
+  <table class="ui unstackable striped table">
+    <thead>
+      <tr>
+        <th>City</th>
+        <th>Type</th>
+        <th>Famous For</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each singleDestination.destination}}
+        <tr>
+          <td>
+            {{city}}
+          </td>
+          <td>
+            {{type}}
+          </td>
+           <td>
+            {{popular}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  {{else}}
+    <h3 class="ui message">
+     Empty Destination List!
+    </h3>
+
+{{/if}}

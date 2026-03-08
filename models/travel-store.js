@@ -13,7 +13,7 @@ const TravelStore = {
         return this.store.findAll(this.collection);
     },
     getDestination(id) {
-        return this.store.findOneBy(this.collection, (destination => destination.id === id));
+        return this.store.findOneBy(this.collection, (destination => travel.id === id));
     },
 };
 
