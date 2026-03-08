@@ -8,7 +8,8 @@
                     "id" : "06",
                     "city": "Barcelona",
                     "type": "Coastal City",
-                    "popular": "Sagrada Familia"
+                    "popular": "Sagrada Familia",
+                    "image" : "Barcelona.webp"
                 },
                 {
                     "id" : "07",
@@ -80,7 +81,7 @@
                     "id" : "15",
                     "city": "New York",
                     "type": "City Break",
-                    "popular": "Times Square"
+                    "popular": "Statue of Liberty"
                 },
                 {
                     "id" : "16",
