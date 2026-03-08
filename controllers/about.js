@@ -1,6 +1,7 @@
 'use strict';
 
 import logger from "../utils/logger.js";
+import appStore from "../models/app-store.js";
 
 const about = {
   createView(request, response) {
@@ -8,6 +9,7 @@ const about = {
     
     const viewData = {
       title: "About the Travel Destination App",
+      info: appStore.getAppInfo()
     };
     
     response.render('about', viewData);   
