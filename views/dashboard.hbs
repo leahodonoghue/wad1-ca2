@@ -11,47 +11,12 @@
 {{/unless}}
    
  {{#each destinations}}
-
  <section class="ui left aligned middle aligned scrolling segment">
    <h3 class="ui header">
        {{country}}
    </h3>
-
-   {{#if destinations}}
-
-   <table class="ui unstackable striped table">
-    <thead>
-        <tr>
-            <th>City</th>
-            <th>Type</th>
-            <th>Famous for</th>
-        </tr>
-    </thead>
-    <tbody>
-        {{#each destinations}}
-        <tr>
-            <td>
-                {{city}}
-            </td>
-            <td>
-                {{type}}
-            </td>
-            <td>
-                {{popular}}
-            </td>
-        </tr>
-        {{/each}}
-    </tbody>
-   </table>
-
-   {{else}}
-     <h3 class="ui message">
-        Empty country!
-     </h3>
-
-   {{/if}}
-
- </section>
-
- {{/each}}
+<a href="#"> View </a>
+</section>
+  {{/each}}
+  
 </section>
