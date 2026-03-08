@@ -14,6 +14,8 @@ const travel = {
             title: 'Destination',
             singleDestination: TravelStore.getDestination(destinationId)
         };
+
+        /* this is an express function that renders the view */
         response.render('travel', viewData);
     },
 };

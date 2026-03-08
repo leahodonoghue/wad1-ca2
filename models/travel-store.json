@@ -112,11 +112,6 @@
                     
                 }
             ]
-        },
-        {
-            "id" : "05",
-            "country": "country not added",
-            "destinations": []
         }
     ]
 }
