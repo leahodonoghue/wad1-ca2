@@ -10,6 +10,28 @@
    <h3 class="ui header">
        {{country}}
    </h3>
+
+   <table class="ui unstackable striped table">
+    <thead>
+        <tr>
+            <th>City</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each destinations}}
+        <tr>
+            <td>
+                {{city}}
+            </td>
+            <td>
+                {{type}}
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+   </table>
+   
  </section>
 
  {{/each}}
