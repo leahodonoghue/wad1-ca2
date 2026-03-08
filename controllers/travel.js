@@ -7,7 +7,7 @@ const travel = {
         const viewData = {
             title: 'Destination'
         };
-        response.render('destination', viewData);
+        response.render('travel', viewData);
     },
 };
 
