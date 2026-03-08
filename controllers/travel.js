@@ -8,6 +8,8 @@ const travel = {
        const destinationId = request.params.id;
        logger.debug(`Destination id = ${destinationId}`);
 
+ /* this creates a new object called “viewData” in the function createView()
+   This function has all the data to be sent to the view */
         const viewData = {
             title: 'Destination',
             singleDestination: TravelStore.getDestination(destinationId)
