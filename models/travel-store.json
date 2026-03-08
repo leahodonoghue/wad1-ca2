@@ -9,7 +9,7 @@
                     "city": "Barcelona",
                     "type": "Coastal City",
                     "popular": "Sagrada Familia",
-                    "image" : "/Barcelona.webp"
+                    "image" : "/public/Barcelona.webp"
                 },
                 {
                     "id" : "07",
