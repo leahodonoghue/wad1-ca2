@@ -1,6 +1,7 @@
 {{#if singleDestination.destinations}}
+<div class="ui three stackable cards">
       {{#each singleDestination.destinations}}
-      <div class="ui centered card">
+      <div class="ui card"></div>
         <div class="image">
             <img src="/{{image}}" alt="{{city}}">
         </div>
@@ -16,6 +17,7 @@
         </div>
 </div>
 {{/each}}
+</div>
 
   {{else}}
     <h3 class="ui message">
