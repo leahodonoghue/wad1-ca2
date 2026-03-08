@@ -1,19 +1,17 @@
 'use strict';
 
 import logger from "../utils/logger.js";
-import appStore from "../models/app-store.js";
 
-const start = {
+const dashboard = {
   createView(request, response) {
-    logger.info("Start page loading!");
+    logger.info("Dashboard page loading!");
     
     const viewData = {
-      title: "CA1 Starter App",
-      info: appStore.getAppInfo()
+      title: "Travel Destination App Dashboard",
     };
     
-    response.render('start', viewData);   
+    response.render('dashboard', viewData);   
   },
 };
 
-export default start;
+export default dashboard;
