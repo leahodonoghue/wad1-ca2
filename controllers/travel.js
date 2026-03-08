@@ -1,7 +1,7 @@
 'use strict';
 
 import logger from '../utils/logger.js';
-import TavelStore from '../models/travel-store.js';
+import TravelStore from '../models/travel-store.js';
 
 const travel = {
     createView(request, response) {
