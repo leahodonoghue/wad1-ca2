@@ -2,6 +2,7 @@
 
 import logger from "../utils/logger.js";
 import appStore from "../models/app-store.js";
+import empStore from "../models/emp-store.js";
 
 const about = {
   createView(request, response) {
@@ -9,9 +10,10 @@ const about = {
     
     const viewData = {
       title: "About the Travel Destination App",
-      info: appStore.getAppInfo()
+      info: appStore.getAppInfo(),
+      emps: empStore.getEmpInfo()
     };
-    
+    logger.info(viewData.emps)
     response.render('about', viewData);   
   },
 };

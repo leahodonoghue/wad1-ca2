@@ -1,0 +1,12 @@
+{
+    "employee" : {
+        "name":"Leah",
+        "fullname":"Leah O'Donoghue",
+        "image":"/me.jpg",
+        "joined":2026,
+        "job":"Web Developer",
+        "city":"Waterford",
+        "contact":"leah123@gmail.com",
+        "connections": 35
+    }
+}
