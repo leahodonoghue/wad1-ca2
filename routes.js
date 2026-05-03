@@ -19,4 +19,8 @@ router.get('/about', about.createView);
 import travel from './controllers/travel.js';
 router.get('/travel/:id', travel.createView);
 
+router.post('/travel/:id/addcity', travel.addCity);
+router.post('/dashboard/addcountry', dashboard.addCountry);
+
+
 export default router;

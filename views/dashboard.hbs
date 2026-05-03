@@ -1,23 +1,4 @@
 {{> menu id="dashboard"}}
 
-<section class="ui center aligned middle aligned segment">
-
-   <h2>Travel Destination App Dashboard</h2>
-
-{{#unless destinations}}
-    <h3 class="ui message">
-        Start adding your Destinations!
-    </h3>
-{{/unless}}
-   
- {{#each destinations}}
- <section class="ui left aligned middle aligned scrolling segment">
-   <h3 class="ui header">
-       {{country}} {{flag}}
-   </h3>
-<a href="/travel/{{id}}"> 
-<i class="eye icon"></i>View </a>
-</section>
-  {{/each}}
-
-</section>
+{{> listcountries}}
+{{> addcountry}}

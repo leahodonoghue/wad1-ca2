@@ -15,6 +15,14 @@ const TravelStore = {
     getDestination(id) {
         return this.store.findOneBy(this.collection, (destination => destination.id === id));
     },
+    addCity(id, city) {
+    this.store.addItem(this.collection, id, this.array, city);
+    },
+    addCountry(country) {
+    this.store.addCollection(this.collection, country);
+},
+
+
 };
 
 export default TravelStore;

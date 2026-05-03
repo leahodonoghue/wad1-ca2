@@ -2,6 +2,7 @@
 
 import logger from "../utils/logger.js";
 import TravelStore from "../models/travel-store.js";
+import { v4 as uuidv4 } from 'uuid';
 
 const dashboard = {
   createView(request, response) {
@@ -18,6 +19,17 @@ const dashboard = {
     
     response.render('dashboard', viewData);   
   },
+
+  addCountry(request, response) {
+    const newCountry = {
+      id: uuidv4(),
+      country: request.body.country,
+      destinations: [],
+    };
+    TravelStore.addCountry(newCountry);
+    response.redirect('/dashboard');
+},
+
 };
 
 export default dashboard;

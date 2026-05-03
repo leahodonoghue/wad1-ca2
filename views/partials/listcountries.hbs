@@ -1,0 +1,35 @@
+{{#if destinations}}
+
+<div class="ui three stackable cards">
+
+  {{#each destinations}}
+  <div class="ui card">
+
+    <div class="content">
+      <div class="header">
+        {{country}} {{flag}}
+      </div>
+    </div>
+
+    <div class="content">
+      <p>Total cities: {{destinations.length}}</p>
+    </div>
+
+    <div class="extra content">
+      <a href="/travel/{{id}}">
+        <i class="eye icon"></i> View
+      </a>
+    </div>
+
+  </div>
+  {{/each}}
+
+</div>
+
+{{else}}
+
+  <h3 class="ui message">
+    Start adding your countries!
+  </h3>
+
+{{/if}}

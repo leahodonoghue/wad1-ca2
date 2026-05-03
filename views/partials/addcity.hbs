@@ -1,0 +1,20 @@
+<form class="ui stacked segment form" action="/travel/{{id}}/addcity" method="POST">
+  <div class="two fields">
+    <div class="field">
+      <label>City</label>
+      <input type="text" name="city" autofocus required title = "Please include a valid city"
+	  placeholder="City Name">
+    </div>
+    <div class="field">
+      <label>type</label>
+      <input type="text" name="type" required title = "Please include the type of city"
+	  placeholder="City Type"  >
+    </div>
+     <div class="field">
+      <label>Famous For</label>
+      <input type="text" name="popular" autofocus required title = "Please include a valid popularity"
+	  placeholder="What it's famous for">
+    </div>
+  </div>
+  <button class="ui blue submit button">Add City</button>
+</form>
