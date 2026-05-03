@@ -21,14 +21,24 @@ const dashboard = {
   },
 
   addCountry(request, response) {
+    const timestamp = new Date();
     const newCountry = {
       id: uuidv4(),
       country: request.body.country,
+      date: timestamp,
       destinations: [],
     };
     TravelStore.addCountry(newCountry);
     response.redirect('/dashboard');
 },
+
+deleteCountry(request, response) {
+    const countryId = request.params.id;
+    logger.debug(`Deleting Country ${countryId}`);
+    TravelStore.removeCountry(countryId);
+    response.redirect("/dashboard");
+},
+
 
 };
 

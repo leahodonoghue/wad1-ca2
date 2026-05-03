@@ -22,5 +22,8 @@ router.get('/travel/:id', travel.createView);
 router.post('/travel/:id/addcity', travel.addCity);
 router.post('/dashboard/addcountry', dashboard.addCountry);
 
+router.get('/travel/:id/deletedestination/:cityid', travel.deleteCity);
+router.get('/dashboard/deletecountry/:id', dashboard.deleteCountry);
+
 
 export default router;

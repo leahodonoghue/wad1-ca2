@@ -3,13 +3,13 @@
     {
       "id": "01",
       "country": "Spain",
-      "flag": "🇪🇸",
       "destinations": [
         {
           "id": "06",
           "city": "Barcelona",
           "type": "Coastal City",
           "popular": "Sagrada Familia",
+          "rating": 4,
           "image": "Barcelona.webp"
         },
         {
@@ -17,6 +17,7 @@
           "city": "Madrid",
           "type": "Capital City",
           "popular": "museums",
+          "rating": 4,
           "image": "madrid.jpg"
         },
         {
@@ -24,12 +25,14 @@
           "city": "Valencia",
           "type": "Coastal City",
           "popular": "Futuristic Architecture ",
+          "rating": 4,
           "image": "valencia.jpg"
         },
         {
           "id": "079674f0-7e91-4333-8785-571aaf068b88",
           "city": "segfbces",
           "type": "dsfds",
+          "rating": 4,
           "popular": "sdefsedf"
         }
       ]
@@ -37,13 +40,13 @@
     {
       "id": "02",
       "country": "Italy",
-      "flag": "🇮🇹",
       "destinations": [
         {
           "id": "09",
           "city": "Rome",
           "type": "Capital City",
           "popular": "Colosseum",
+          "rating": 4,
           "image": "rome.webp"
         },
         {
@@ -51,38 +54,28 @@
           "city": "Venice",
           "type": "Coastal City",
           "popular": "Canals",
+          "rating": 4,
           "image": "venice.jpg"
         },
         {
-          "id": "10",
-          "city": "Florence",
-          "type": "City Break",
-          "popular": "Renaissance Art",
-          "image": "florence.avif"
-        },
-        {
-          "id": "bf9f067d-00d4-43e0-9840-a00aae46cafd",
-          "city": "Naples",
-          "type": "coastal"
-        },
-        {
-          "id": "5ec90d74-75f1-40cf-902a-3f038adde2e9",
-          "city": "Capri",
+          "id": "b70141d9-ffe6-4025-b2ba-910dc26018ce",
+          "city": "Amalfi",
           "type": "coastal",
-          "popular": "beaches"
+          "popular": "ocean",
+          "rating": 5
         }
       ]
     },
     {
       "id": "03",
       "country": "France",
-      "flag": "🇫🇷",
       "destinations": [
         {
           "id": "12",
           "city": "Paris",
           "type": "City Break",
           "popular": "Eiffel Tower",
+          "rating": 4,
           "image": "paris.webp"
         },
         {
@@ -90,6 +83,7 @@
           "city": "Bordeaux",
           "type": "City Break",
           "popular": "Wine",
+          "rating": 4,
           "image": "bordeaux.jpg"
         },
         {
@@ -97,6 +91,7 @@
           "city": "Marseille",
           "type": "Port City",
           "popular": "Diverse cusine",
+          "rating": 4,
           "image": "marseille.jpg"
         }
       ]
@@ -104,13 +99,13 @@
     {
       "id": "04",
       "country": "United States of America",
-      "flag": "🇺🇸",
       "destinations": [
         {
           "id": "15",
           "city": "New York",
           "type": "City Break",
           "popular": "Statue of Liberty",
+          "rating": 4,
           "image": "newyork.jpg"
         },
         {
@@ -118,6 +113,7 @@
           "city": "Miami",
           "type": "Coastal City",
           "popular": "Miami Beach",
+          "rating": 4,
           "image": "miami.webp"
         },
         {
@@ -125,13 +121,15 @@
           "city": "Los Angeles",
           "type": "Coastal City",
           "popular": "Hollywood",
+          "rating": 4,
           "image": "losangeles.jpeg"
         }
       ]
     },
     {
-      "id": "cc9c293d-4148-48c4-ba2d-e57e0d4db7a0",
-      "country": "adhds",
+      "id": "93c24c4d-8821-4d30-8cdf-8e820b0cac26",
+      "country": "poland",
+      "date": "2026-05-03T15:39:03.582Z",
       "destinations": []
     }
   ]

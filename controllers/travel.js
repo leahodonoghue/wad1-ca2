@@ -28,10 +28,20 @@ const travel = {
       city: request.body.city,
       type: request.body.type,
       popular: request.body.popular,
+      rating: parseInt(request.body.rating)
     };
     TravelStore.addCity(countryId, newCity);
     response.redirect('/travel/' + countryId);
 },
+
+deleteCity(request, response) {
+    const countryId = request.params.id;
+    const cityId = request.params.cityid;
+    logger.debug(`Deleting City  $(cityId} from Country ${countryId}`);
+    TravelStore.removeCity(countryId, cityId);
+    response.redirect('/travel/' + countryId);
+},
+
 };
 
 export default travel;

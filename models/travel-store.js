@@ -20,8 +20,14 @@ const TravelStore = {
     },
     addCountry(country) {
     this.store.addCollection(this.collection, country);
-},
-
+    },
+    removeCity(id, cityId) {
+    this.store.removeItem(this.collection, id, this.array, cityId);
+    },
+    removeCountry(id) {
+    const country = this.getDestination(id);
+    this.store.removeCollection(this.collection, country);
+    },
 
 };
 

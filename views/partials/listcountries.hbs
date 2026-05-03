@@ -7,17 +7,26 @@
 
     <div class="content">
       <div class="header">
-        {{country}} {{flag}}
+        {{uppercase country}}
       </div>
     </div>
 
     <div class="content">
       <p>Total cities: {{destinations.length}}</p>
+      {{#if date}}
+      <p>
+        <i class="calendar alternate outline icon"></i>
+        Created on <i>{{formatDate date}}</i>
+      </p>
+      {{/if}}
     </div>
 
     <div class="extra content">
       <a href="/travel/{{id}}">
-        <i class="eye icon"></i> View
+        <i class="ui open folder outline black icon"></i> View
+      </a>
+      <a href="dashboard/deletecountry/{{id}}">
+        <i class="ui trash black icon"></i>
       </a>
     </div>
 
