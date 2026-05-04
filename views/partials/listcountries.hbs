@@ -1,3 +1,18 @@
+<section class="dashboard-header">
+
+  <h2 class="title">Travel App Dashboard</h2>
+
+    <form action="/searchCategory" method="GET" class="ui form">
+
+      <div class="field">
+        <input type="text" name="searchTerm" placeholder="Search by country..." value="{{search}}">
+      </div>   
+
+    </form>
+
+</section>
+
+
 {{#if destinations}}
 
 <div class="ui three stackable cards">
@@ -37,8 +52,11 @@
 
 {{else}}
 
-  <h3 class="ui message">
-    Start adding your countries!
-  </h3>
+{{#unless search}}
+    <h3 class="ui message">
+       Start adding your playlists!
+    </h3>
+{{/unless}}
+
 
 {{/if}}

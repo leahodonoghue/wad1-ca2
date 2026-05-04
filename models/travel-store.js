@@ -31,6 +31,12 @@ const TravelStore = {
     editCity(id, cityId, updatedCity) {
     this.store.editItem(this.collection, id, cityId, this.array, updatedCity);
     },
+    searchCountries(search) {
+    return this.store.findBy(
+      this.collection,
+      (country => country.country.toLowerCase().includes(search.toLowerCase())))
+    }
+
 
 
 };

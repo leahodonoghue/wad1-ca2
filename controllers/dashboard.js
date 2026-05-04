@@ -7,12 +7,19 @@ import { v4 as uuidv4 } from 'uuid';
 const dashboard = {
   createView(request, response) {
     logger.info("Dashboard page loading!");
+
+    const searchTerm = request.query.searchTerm || "";
     
+    const destinations = searchTerm
+      ? TravelStore.searchCountries(searchTerm)
+      : TravelStore.getAllTravelDestinations();
+
   /* this creates a new object called “viewData” in the function createView()
    This function has all the data to be sent to the view */
     const viewData = {
       title: "Travel Destination App Dashboard",
-      destinations: TravelStore.getAllTravelDestinations()
+      destinations: destinations,
+      search: searchTerm
     };
 
     logger.debug(viewData.destinations);

@@ -30,5 +30,6 @@ router.post('/travel/:id/updatecity/:cityid', travel.updateCity);
 import stats from './controllers/stats.js';
 router.get('/stats', stats.createView);
 
+router.get('/searchCategory', dashboard.createView);
 
 export default router;
