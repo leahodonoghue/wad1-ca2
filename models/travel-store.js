@@ -12,30 +12,48 @@ const TravelStore = {
     getAllTravelDestinations() {
         return this.store.findAll(this.collection);
     },
+
     getDestination(id) {
         return this.store.findOneBy(this.collection, (destination => destination.id === id));
     },
+
     addCity(id, city) {
     this.store.addItem(this.collection, id, this.array, city);
     },
+
     addCountry(country) {
     this.store.addCollection(this.collection, country);
     },
+
     removeCity(id, cityId) {
     this.store.removeItem(this.collection, id, this.array, cityId);
     },
+
     removeCountry(id) {
     const country = this.getDestination(id);
     this.store.removeCollection(this.collection, country);
     },
+
     editCity(id, cityId, updatedCity) {
     this.store.editItem(this.collection, id, cityId, this.array, updatedCity);
     },
+
     searchCountries(search) {
     return this.store.findBy(
       this.collection,
       (country => country.country.toLowerCase().includes(search.toLowerCase())))
-    }
+    },
+
+    getUserCountries(userid) {
+    return this.store.findBy(this.collection, (country => country.userid === userid));
+    },
+
+    searchUserCountries(search, userid) {
+    return this.store.findBy(
+    this.collection,
+    (country => country.userid === userid && country.country.toLowerCase().includes(search.toLowerCase())))
+}, 
+
 
 
 

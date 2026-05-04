@@ -3,17 +3,20 @@
 import logger from '../utils/logger.js';
 import TravelStore from '../models/travel-store.js';
 import { v4 as uuidv4 } from 'uuid';
+import accounts from './accounts.js';
 
 const travel = {
     createView(request, response) {
        const destinationId = request.params.id;
+       const loggedInUser = accounts.getCurrentUser(request);
        logger.debug(`Destination id = ${destinationId}`);
 
  /* this creates a new object called “viewData” in the function createView()
    This function has all the data to be sent to the view */
         const viewData = {
             title: 'Destination',
-            singleDestination: TravelStore.getDestination(destinationId)
+            singleDestination: TravelStore.getDestination(destinationId),
+            fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         };
 
         /* this is an express function that renders the view */

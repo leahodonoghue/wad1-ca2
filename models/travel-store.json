@@ -1,130 +1,17 @@
 {
   "TravelDestinations": [
     {
-      "id": "01",
-      "country": "Spain",
-      "destinations": [
-        {
-          "id": "06",
-          "city": "Barcelona",
-          "type": "Coastal City",
-          "popular": "Sagrada Familia",
-          "rating": 4,
-          "image": "Barcelona.webp"
-        },
-        {
-          "id": "07",
-          "city": "Madrid",
-          "type": "Capital City",
-          "popular": "museums",
-          "rating": 5
-        },
-        {
-          "id": "08",
-          "city": "Valenciaa",
-          "type": "Coastal City",
-          "popular": "Futuristic Architecture ",
-          "rating": 4
-        },
-        {
-          "id": "079674f0-7e91-4333-8785-571aaf068b88",
-          "city": "segfbces",
-          "type": "dsfds",
-          "rating": 2,
-          "popular": "sdefsedf"
-        }
-      ]
-    },
-    {
-      "id": "02",
-      "country": "Italy",
-      "destinations": [
-        {
-          "id": "09",
-          "city": "Rome",
-          "type": "Capital City",
-          "popular": "Colosseum",
-          "rating": 5
-        },
-        {
-          "id": "11",
-          "city": "Venice",
-          "type": "Coastal City",
-          "popular": "Canals",
-          "rating": 4,
-          "image": "venice.jpg"
-        }
-      ]
-    },
-    {
-      "id": "03",
-      "country": "France",
-      "destinations": [
-        {
-          "id": "12",
-          "city": "Paris",
-          "type": "City break weekend",
-          "popular": "Eiffel Tower",
-          "rating": null
-        },
-        {
-          "id": "13",
-          "city": "Bordeaux",
-          "type": "City Break",
-          "popular": "Wine",
-          "rating": 4,
-          "image": "bordeaux.jpg"
-        },
-        {
-          "id": "14",
-          "city": "Marseille",
-          "type": "Port City",
-          "popular": "Diverse cusine",
-          "rating": 4,
-          "image": "marseille.jpg"
-        }
-      ]
-    },
-    {
-      "id": "04",
-      "country": "United States of America",
-      "destinations": [
-        {
-          "id": "15",
-          "city": "New York",
-          "type": "City Break",
-          "popular": "Statue of Liberty",
-          "rating": 4,
-          "image": "newyork.jpg"
-        },
-        {
-          "id": "16",
-          "city": "Miami",
-          "type": "Coastal City",
-          "popular": "Miami Beach",
-          "rating": 4,
-          "image": "miami.webp"
-        },
-        {
-          "id": "17",
-          "city": "Los Angeles",
-          "type": "Coastal City",
-          "popular": "Hollywood",
-          "rating": 4,
-          "image": "losangeles.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "93c24c4d-8821-4d30-8cdf-8e820b0cac26",
-      "country": "poland",
-      "date": "2026-05-03T15:39:03.582Z",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "18c9d62d-53f4-4480-8c73-23f005048bbb",
+      "country": "Homers country",
+      "date": "2026-05-04T14:54:53.744Z",
       "destinations": []
     },
     {
-      "id": "271fe0b3-e63c-4e56-b588-b7a4180af4b6",
-      "country": "england",
-      "date": "2026-05-04T14:03:03.346Z",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "30254f91-1eca-44bc-bfc9-8901747ddb7c",
+      "country": "marges country",
+      "date": "2026-05-04T14:55:16.995Z",
       "destinations": []
     }
   ]
