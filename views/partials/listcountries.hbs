@@ -3,12 +3,30 @@
   <h2 class="title">Travel App Dashboard</h2>
 
     <form action="/searchCategory" method="GET" class="ui form">
+        
+      <div class="ui inline fields">
+        <div class="field">
+          <input type="text" name="searchTerm" placeholder="Search by country..." value="{{search}}">
+        </div>
 
-      <div class="field">
-        <input type="text" name="searchTerm" placeholder="Search by country..." value="{{search}}">
-      </div>   
+        <div class="field">
+          <label>Sort by:</label>
+          <select class="ui dropdown" name="sort" onchange="this.form.submit()">
+            <option value="country" {{#if countrySelected}}selected{{/if}}>Country</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Order:</label>
+          <select class="ui dropdown" name="order" onchange="this.form.submit()">
+            <option value="asc" {{#if ascSelected}}selected{{/if}}>↑</option>
+            <option value="desc" {{#if descSelected}}selected{{/if}}>↓</option>
+          </select>
+        </div>
+      </div>
 
     </form>
+
 
 </section>
 

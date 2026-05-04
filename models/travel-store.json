@@ -120,6 +120,12 @@
       "country": "poland",
       "date": "2026-05-03T15:39:03.582Z",
       "destinations": []
+    },
+    {
+      "id": "271fe0b3-e63c-4e56-b588-b7a4180af4b6",
+      "country": "england",
+      "date": "2026-05-04T14:03:03.346Z",
+      "destinations": []
     }
   ]
 }

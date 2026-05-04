@@ -14,12 +14,31 @@ const dashboard = {
       ? TravelStore.searchCountries(searchTerm)
       : TravelStore.getAllTravelDestinations();
 
+    const sortField = request.query.sort;
+    const order = request.query.order === "desc" ? -1 : 1;
+
+    let sorted = destinations;
+
+    if (sortField) {
+      sorted = destinations.slice().sort((a, b) => {
+        if (sortField === "country") {
+          return a.country.localeCompare(b.country) * order;
+        }
+
+
+        return 0;
+      });
+    }
+
   /* this creates a new object called “viewData” in the function createView()
    This function has all the data to be sent to the view */
     const viewData = {
-      title: "Travel Destination App Dashboard",
-      destinations: destinations,
-      search: searchTerm
+       title: "Travel App Dashboard",
+      destinations: sortField ? sorted : destinations,
+      search: searchTerm,
+      countrySelected: request.query.sort === "country",
+      ascSelected: request.query.order === "asc",
+      descSelected: request.query.order === "desc",
     };
 
     logger.debug(viewData.destinations);
