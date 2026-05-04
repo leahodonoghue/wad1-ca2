@@ -16,6 +16,7 @@ const start = {
       title: "Welcome to the Travel Destination App",
       info: appStore.getAppInfo(),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture
     };
     
     response.render('start', viewData);   

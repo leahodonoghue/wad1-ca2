@@ -20,6 +20,17 @@
       "email": "leah@odonoghue.com",
       "password": "secret",
       "id": "0f197769-67e2-4dc7-952a-8984476fd339"
+    },
+    {
+      "firstName": "Leah",
+      "lastName": "ODonoghue",
+      "email": "leah@123.com",
+      "password": "secret",
+      "id": "8ae0d58f-7ea4-46bf-bab2-ed1fbe2bdb39",
+      "picture": {
+        "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777928319/p4aojjdix9tozs0qaot3.jpg",
+        "public_id": "p4aojjdix9tozs0qaot3"
+      }
     }
   ]
 }

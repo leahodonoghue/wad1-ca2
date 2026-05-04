@@ -43,7 +43,8 @@ let favCities = maxRated.map(item => item.city);
     const viewData = {
       title: "Travel App Statistics",
       stats: statistics,
-      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture
     };
   
     response.render("stats", viewData);

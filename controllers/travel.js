@@ -16,7 +16,8 @@ const travel = {
         const viewData = {
             title: 'Destination',
             singleDestination: TravelStore.getDestination(destinationId),
-            fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
+            fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+            picture: loggedInUser.picture
         };
 
         /* this is an express function that renders the view */
@@ -51,13 +52,16 @@ deleteCity(request, response) {
 updateCity(request, response) {
     const countryId = request.params.id;
     const cityId = request.params.cityid;
+    const country = TravelStore.getDestination(countryId);
+    const existingCity = country.destinations.find(city => city.id === cityId);
     logger.debug("updating city " + cityId);
     const updatedCity = {
       id: cityId,
       city: request.body.city,
       type: request.body.type,
       popular: request.body.popular,
-      rating: parseInt(request.body.rating)
+      rating: parseInt(request.body.rating),
+      picture: existingCity.picture
     };
     TravelStore.editCity(countryId, cityId, updatedCity);
     response.redirect('/travel/' + countryId);

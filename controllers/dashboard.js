@@ -40,6 +40,7 @@ const dashboard = {
     const viewData = {
        title: "Travel App Dashboard",
        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+       picture: loggedInUser.picture,
       destinations: sortField ? sorted : destinations,
       search: searchTerm,
       countrySelected: request.query.sort === "country",
@@ -66,9 +67,9 @@ const dashboard = {
       date: timestamp,
       destinations: [],
     };
-    TravelStore.addCountry(newCountry);
+    TravelStore.addCountry(newCountry, request.files.picture, function() {
     response.redirect("/dashboard");
-  
+    });
 
 },
 

@@ -28,9 +28,16 @@ const TravelStore = {
         }
     },
 
-    addCountry(country) {
-    this.store.addCollection(this.collection, country);
-    },
+    async addCountry(country, file, response) {
+        try {
+            country.picture = await this.store.addToCloudinary(file);
+            this.store.addCollection(this.collection, country);
+            response();
+    } catch (error) {
+        logger.error("Error processing country:", error);
+        response(error);
+    }
+},
 
       async removeCity(id, cityId, response) {
     const country = this.getDestination(id);

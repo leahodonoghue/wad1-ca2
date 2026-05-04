@@ -19,7 +19,41 @@
       "id": "e935f3f4-86d5-40bb-b931-07d500a819f5",
       "country": "Ireland",
       "date": "2026-05-04T20:32:15.772Z",
-      "destinations": []
+      "destinations": [
+        {
+          "id": "787b9347-2bc0-4df0-a124-f07b242065aa",
+          "city": "Dublin",
+          "type": "Capital City",
+          "popular": "Dublin Castle",
+          "rating": 5,
+          "picture": {
+            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777927188/vuwza3qzpweq5tbvuixz.avif",
+            "public_id": "vuwza3qzpweq5tbvuixz"
+          }
+        }
+      ]
+    },
+    {
+      "userid": "8ae0d58f-7ea4-46bf-bab2-ed1fbe2bdb39",
+      "id": "fd2c9de3-2336-4b1b-92c8-d3aab767951f",
+      "country": "Ireland",
+      "date": "2026-05-04T21:23:19.934Z",
+      "destinations": [],
+      "picture": {
+        "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777929800/qsygj9kgxi5gmhehikj5.webp",
+        "public_id": "qsygj9kgxi5gmhehikj5"
+      }
+    },
+    {
+      "userid": "8ae0d58f-7ea4-46bf-bab2-ed1fbe2bdb39",
+      "id": "599caee9-bea5-4ad9-af90-d6cc82d48fdc",
+      "country": "Italy",
+      "date": "2026-05-04T21:24:22.121Z",
+      "destinations": [],
+      "picture": {
+        "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777929862/qe4vztmbrnlmbcx3a9vr.png",
+        "public_id": "qe4vztmbrnlmbcx3a9vr"
+      }
     }
   ]
 }

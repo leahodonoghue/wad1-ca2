@@ -16,6 +16,7 @@ const about = {
     const viewData = {
       title: "About the Travel Destination App",
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture,
       info: appStore.getAppInfo(),
       emps: empStore.getEmpInfo()
     };
