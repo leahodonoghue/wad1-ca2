@@ -1,6 +1,7 @@
 # Assignment 2
 
 App Description
+- login with email: leah@123.com and password:secret - to see full collections
 - This is an app where users can keep a collection of their favourite cities they have been to
 - The purpose of this is so users can keep a track of all their favourite holiday destinations and so other users can see the most popular cities
 - the collections are categorized by country

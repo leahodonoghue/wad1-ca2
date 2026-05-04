@@ -23,7 +23,7 @@ const stats = {
 	
 	  let average = numCountries > 0 ? (numCities / numCountries).toFixed(2) : 0;
 
-// let cities was researched
+
 let cities = countries.flatMap(country => country.destinations);
 
 let mapped = cities.map(city => city.rating);
