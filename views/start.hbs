@@ -5,13 +5,74 @@
   <h2>Welcome to the Travel Destinations App!</h2>
 
   <p>
-    This app allows users to view a collection of Travel Destinations.
+    This app allows users to keep a collection of Travel Destinations.
   </p>
-  <p>
-    Find the perfect destination for your 2026 Holiday!
-  </p>
+ 
 
   <img src = "/plane.jpg" class = "ui centered image">
+
+<div class="ui five statistics" style="margin-top: 1em;">
+
+    
+
+  <div class="statistic">
+    <div class="value">
+      <i class="blue plane icon"></i>
+    </div>
+    <div class="label">
+        App Title: <br>
+        {{appTitle}}
+    </div>
+  </div>
+  <!-- other statistics will go here -->
+     <div class="statistic">
+    <div class="value">
+      <i class="green users icon"></i>
+    </div>
+    <div class="label">
+        Total Users: <br>
+        {{totalUsers}}
+    </div>
+    <div class="statistic">
+    <div class="value">
+      <i class="purple code branch icon"></i>
+    </div>
+    <div class="label">
+        App Version: <br>
+        {{version}}
+    </div>
+  </div>
+    <div class="statistic">
+    <div class="value">
+      <i class=" red map pin icon"></i>
+    </div>
+    <div class="label">
+        Made in: <br>
+        {{location}}
+    </div>
+  </div>
+    <div class="statistic">
+    <div class="value">
+      <i class="pink user icon"></i>
+    </div>
+    <div class="label">
+        Created by: <br>
+        {{creators.0.name}}
+    </div>
+  </div>
+    <div class="statistic">
+    <div class="value">
+      <i class=" grey user plus icon"></i>
+    </div>
+    <div class="label">
+        With help from: <br>
+        {{creators.1.name}}
+    </div>
+  </div>
+
+
+
+</div>
 
 
 </section>

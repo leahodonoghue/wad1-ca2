@@ -3,6 +3,8 @@
 import logger from "../utils/logger.js";
 import appStore from "../models/app-store.js";
 import accounts from './accounts.js';
+import TravelStore from "../models/travel-store.js";
+import userStore from "../models/user-store.js";
 
 const start = {
   createView(request, response) {
@@ -16,7 +18,8 @@ const start = {
       title: "Welcome to the Travel Destination App",
       info: appStore.getAppInfo(),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-      picture: loggedInUser.picture
+      picture: loggedInUser.picture,
+      totalUsers: userStore.getAllUsers().length,
     };
     
     response.render('start', viewData);   

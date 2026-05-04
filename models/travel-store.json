@@ -15,44 +15,138 @@
       "destinations": []
     },
     {
-      "userid": "0f197769-67e2-4dc7-952a-8984476fd339",
-      "id": "e935f3f4-86d5-40bb-b931-07d500a819f5",
-      "country": "Ireland",
-      "date": "2026-05-04T20:32:15.772Z",
-      "destinations": [
-        {
-          "id": "787b9347-2bc0-4df0-a124-f07b242065aa",
-          "city": "Dublin",
-          "type": "Capital City",
-          "popular": "Dublin Castle",
-          "rating": 5,
-          "picture": {
-            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777927188/vuwza3qzpweq5tbvuixz.avif",
-            "public_id": "vuwza3qzpweq5tbvuixz"
-          }
-        }
-      ]
-    },
-    {
-      "userid": "8ae0d58f-7ea4-46bf-bab2-ed1fbe2bdb39",
-      "id": "fd2c9de3-2336-4b1b-92c8-d3aab767951f",
-      "country": "Ireland",
-      "date": "2026-05-04T21:23:19.934Z",
-      "destinations": [],
-      "picture": {
-        "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777929800/qsygj9kgxi5gmhehikj5.webp",
-        "public_id": "qsygj9kgxi5gmhehikj5"
-      }
-    },
-    {
       "userid": "8ae0d58f-7ea4-46bf-bab2-ed1fbe2bdb39",
       "id": "599caee9-bea5-4ad9-af90-d6cc82d48fdc",
       "country": "Italy",
       "date": "2026-05-04T21:24:22.121Z",
-      "destinations": [],
+      "destinations": [
+        {
+          "id": "3973ad61-9094-4d6f-9140-71a32c9a2b16",
+          "city": "Rome",
+          "type": "Capital City",
+          "popular": "Colosseum",
+          "rating": 5,
+          "picture": {
+            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777931373/zvfd8jls5wygn6t7sest.webp",
+            "public_id": "zvfd8jls5wygn6t7sest"
+          }
+        },
+        {
+          "id": "670abe24-4c71-4499-95c1-bbdbc6ae0d00",
+          "city": "Florence",
+          "type": "City Break",
+          "popular": "Renaissance Art",
+          "rating": 4,
+          "picture": {
+            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777931426/fbg71tvby8095tcwt7ka.avif",
+            "public_id": "fbg71tvby8095tcwt7ka"
+          }
+        },
+        {
+          "id": "a77bd1f7-8900-4f11-b566-6f2cea1898dc",
+          "city": "Venice",
+          "type": "Coastal City",
+          "popular": "Canals",
+          "rating": 3,
+          "picture": {
+            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777931486/p26fmpgwyogdjifhnqcv.webp",
+            "public_id": "p26fmpgwyogdjifhnqcv"
+          }
+        }
+      ],
       "picture": {
         "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777929862/qe4vztmbrnlmbcx3a9vr.png",
         "public_id": "qe4vztmbrnlmbcx3a9vr"
+      }
+    },
+    {
+      "userid": "8ae0d58f-7ea4-46bf-bab2-ed1fbe2bdb39",
+      "id": "0b70d7e4-b06a-45be-9735-1307dac60308",
+      "country": "Spain",
+      "date": "2026-05-04T21:41:20.345Z",
+      "destinations": [
+        {
+          "id": "bfbc8871-8184-4c22-b189-2f597cdd4c75",
+          "city": "Valencia",
+          "type": "Coastal City",
+          "popular": "Futuristic Architecture ",
+          "rating": 5,
+          "picture": {
+            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777930973/efxh8lsl5smffn2vdsuf.avif",
+            "public_id": "efxh8lsl5smffn2vdsuf"
+          }
+        },
+        {
+          "id": "41f6950f-94ca-4629-a4d7-fb9e04bfbf48",
+          "city": "Barcelona",
+          "type": "Coastal City",
+          "popular": "Sagrada Familia",
+          "rating": 4,
+          "picture": {
+            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777931046/rikdi16lt4jt8n2zpqaq.webp",
+            "public_id": "rikdi16lt4jt8n2zpqaq"
+          }
+        },
+        {
+          "id": "381ee042-c685-4c35-ac15-95db6dcb2ea8",
+          "city": "Madrid",
+          "type": "Capital City",
+          "popular": "History",
+          "rating": 4,
+          "picture": {
+            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777931092/mwxhctqg0scy7enju9yo.jpg",
+            "public_id": "mwxhctqg0scy7enju9yo"
+          }
+        }
+      ],
+      "picture": {
+        "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777930881/uenejscemln3npwymuxg.png",
+        "public_id": "uenejscemln3npwymuxg"
+      }
+    },
+    {
+      "userid": "8ae0d58f-7ea4-46bf-bab2-ed1fbe2bdb39",
+      "id": "bedeaf21-2b2c-4fef-9bfc-39b5fc547aca",
+      "country": "ireland",
+      "date": "2026-05-04T21:47:09.507Z",
+      "destinations": [
+        {
+          "id": "581dd3f4-46d8-4a13-b0b5-5b7828166595",
+          "city": "Waterford",
+          "type": "Coastal City",
+          "popular": "Viking Triangle",
+          "rating": 3,
+          "picture": {
+            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777931263/jxv8uzlycgzzjs142sej.jpg",
+            "public_id": "jxv8uzlycgzzjs142sej"
+          }
+        },
+        {
+          "id": "565b90e5-2287-456e-b421-dcde7bffcd54",
+          "city": "Dublin",
+          "type": "Capital City",
+          "popular": "Dublin Castle",
+          "rating": 4,
+          "picture": {
+            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777931297/x4lbbwqs3zacgztr2fv0.avif",
+            "public_id": "x4lbbwqs3zacgztr2fv0"
+          }
+        },
+        {
+          "id": "93d44ef7-856f-4dae-a8be-306f2eec45d2",
+          "city": "Belfast",
+          "type": "City Break",
+          "popular": "Titanic Museum",
+          "rating": 5,
+          "picture": {
+            "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777931323/u4hyliordvgm055hpmke.jpg",
+            "public_id": "u4hyliordvgm055hpmke"
+          }
+        }
+      ],
+      "picture": {
+        "url": "http://res.cloudinary.com/de0oxw7u1/image/upload/v1777931230/opsrvr5xhtbmg5eglhd4.png",
+        "public_id": "opsrvr5xhtbmg5eglhd4"
       }
     }
   ]
