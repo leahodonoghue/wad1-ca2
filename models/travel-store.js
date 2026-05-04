@@ -17,17 +17,38 @@ const TravelStore = {
         return this.store.findOneBy(this.collection, (destination => destination.id === id));
     },
 
-    addCity(id, city) {
-    this.store.addItem(this.collection, id, this.array, city);
+    async addCity(id, city, file, response) {
+        try {
+            city.picture = await this.store.addToCloudinary(file);
+            this.store.addItem(this.collection, id, this.array, city);
+            response();
+        } catch (error) {
+            logger.error("Error processing city:", error);
+            response(error);
+        }
     },
 
     addCountry(country) {
     this.store.addCollection(this.collection, country);
     },
 
-    removeCity(id, cityId) {
+      async removeCity(id, cityId, response) {
+    const country = this.getDestination(id);
+    const city = country.destinations.find(city => city.id === cityId);
+
+    if (city.picture && city.picture.public_id) {
+      try {
+        await this.store.deleteFromCloudinary(city.picture.public_id);
+        logger.info("Cloudinary image deleted");
+      } catch (err) {
+        logger.error("Failed to delete Cloudinary image:", err);
+      }
+    }
+
     this.store.removeItem(this.collection, id, this.array, cityId);
-    },
+    response();
+  },
+
 
     removeCountry(id) {
     const country = this.getDestination(id);
@@ -52,7 +73,9 @@ const TravelStore = {
     return this.store.findBy(
     this.collection,
     (country => country.userid === userid && country.country.toLowerCase().includes(search.toLowerCase())))
-}, 
+    }, 
+
+     
 
 
 

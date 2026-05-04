@@ -16,14 +16,14 @@ const travel = {
         const viewData = {
             title: 'Destination',
             singleDestination: TravelStore.getDestination(destinationId),
-            fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+            fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
         };
 
         /* this is an express function that renders the view */
         response.render('travel', viewData);
     },
 
-           addCity(request, response) {
+addCity(request, response) {
     const countryId = request.params.id;
     const country = TravelStore.getDestination(countryId);
     const newCity = {
@@ -33,16 +33,19 @@ const travel = {
       popular: request.body.popular,
       rating: parseInt(request.body.rating)
     };
-    TravelStore.addCity(countryId, newCity);
+    TravelStore.addCity(countryId, newCity, request.files.picture, function() {
     response.redirect('/travel/' + countryId);
+    }
+);
 },
 
 deleteCity(request, response) {
     const countryId = request.params.id;
     const cityId = request.params.cityid;
-    logger.debug(`Deleting City  $(cityId} from Country ${countryId}`);
-    TravelStore.removeCity(countryId, cityId);
-    response.redirect('/travel/' + countryId);
+    logger.debug(`Deleting City  ${cityId} from Country ${countryId}`);
+    TravelStore.removeCity(countryId, cityId, function() {
+        response.redirect('/travel/' + countryId);
+    });
 },
 
 updateCity(request, response) {
