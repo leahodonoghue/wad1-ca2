@@ -42,6 +42,22 @@ deleteCity(request, response) {
     response.redirect('/travel/' + countryId);
 },
 
+updateCity(request, response) {
+    const countryId = request.params.id;
+    const cityId = request.params.cityid;
+    logger.debug("updating city " + cityId);
+    const updatedCity = {
+      id: cityId,
+      city: request.body.city,
+      type: request.body.type,
+      popular: request.body.popular,
+      rating: parseInt(request.body.rating)
+    };
+    TravelStore.editCity(countryId, cityId, updatedCity);
+    response.redirect('/travel/' + countryId);
+}
+
+
 };
 
 export default travel;

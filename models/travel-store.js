@@ -28,6 +28,10 @@ const TravelStore = {
     const country = this.getDestination(id);
     this.store.removeCollection(this.collection, country);
     },
+    editCity(id, cityId, updatedCity) {
+    this.store.editItem(this.collection, id, cityId, this.array, updatedCity);
+    },
+
 
 };
 

@@ -25,5 +25,6 @@ router.post('/dashboard/addcountry', dashboard.addCountry);
 router.get('/travel/:id/deletedestination/:cityid', travel.deleteCity);
 router.get('/dashboard/deletecountry/:id', dashboard.deleteCountry);
 
+router.post('/travel/:id/updatecity/:cityid', travel.updateCity);
 
 export default router;

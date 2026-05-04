@@ -46,8 +46,7 @@
           "city": "Rome",
           "type": "Capital City",
           "popular": "Colosseum",
-          "rating": 4,
-          "image": "rome.webp"
+          "rating": null
         },
         {
           "id": "11",
@@ -56,13 +55,6 @@
           "popular": "Canals",
           "rating": 4,
           "image": "venice.jpg"
-        },
-        {
-          "id": "b70141d9-ffe6-4025-b2ba-910dc26018ce",
-          "city": "Amalfi",
-          "type": "coastal",
-          "popular": "ocean",
-          "rating": 5
         }
       ]
     },
@@ -73,10 +65,9 @@
         {
           "id": "12",
           "city": "Paris",
-          "type": "City Break",
+          "type": "City break weekend",
           "popular": "Eiffel Tower",
-          "rating": 4,
-          "image": "paris.webp"
+          "rating": null
         },
         {
           "id": "13",

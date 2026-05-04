@@ -1,0 +1,34 @@
+<form class="ui form hide" id="edit{{@index}}" method="POST" action="/travel/{{countryId}}/updatecity/{{id}}" >
+
+<div class="ui card">
+    <div class="content">
+
+        <div class="field">
+            <input type="text" name="city" value="{{city}}" required>
+        </div>
+
+        <div class="field">
+            <input type="text" name="type" value="{{type}}" required>
+        </div>
+
+        <div class="field">
+            <input type="text" name="popular" value="{{popular}}" required>
+        </div>
+
+    </div>
+
+<div class="extra content">
+
+<button type="reset" class="editSubmit" id="hideEdit{{@index}}"
+        title="Exit without saving">
+    <i class="ui undo icon"></i>
+</button>
+
+<button type="submit" class="editSubmit" title="Save changes">
+    <i class="ui save icon"></i>
+</button>
+
+</div>
+
+</div>
+</form>

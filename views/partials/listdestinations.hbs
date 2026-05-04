@@ -1,43 +1,21 @@
 {{#if destinations}}
 <div class="ui three stackable cards">
-      {{#each destinations}}
-      <div class="ui card">
-        <div class="image">
-            <img src="/{{image}}" alt="{{city}}">
-        </div>
+{{#each destinations}}
 
-        <div class="content">
-            <a class="header">{{city}}</a>
-            <div class="meta">
-                Type: {{type}}
-            </div>
-            <div class="description">
-               <i class="star icon"></i> Famous For: {{popular}}
-               {{#if rating}}
-                 <p>
-                     <span 
-                        class="ui yellow disabled rating" 
-                        data-icon="star" 
-                        data-rating="{{rating}}" 
-                        data-max-rating="5">
-                    </span>
+     {{> listOneCity countryId=../id}}
+     {{> editCity countryId=../id}}
 
-                    <span style="color: grey; font-size: 90%; font-style: italic">
-                         {{highlightPopular rating}}
-                    </span>
-                 </p>
-               {{/if}}
-            </div>
-        </div>
+<script>
+    document.querySelector("#showEdit{{@index}}").addEventListener ('click', () => {
+        document.querySelector("#city{{@index}}").style.display = "none";
+        document.querySelector("#edit{{@index}}").style.display = "table-row";
+    })
+    document.querySelector("#hideEdit{{@index}}").addEventListener ('click', () => {
+        document.querySelector("#city{{@index}}").style.display = "table-row";
+        document.querySelector("#edit{{@index}}").style.display = "none";
+    })
+</script>
 
-    <div class="extra content">
-      <a href="/travel/{{../id}}/deletedestination/{{id}}" 
-         title="Delete city">
-        <i class="ui black trash icon"></i>
-      </a>
-    </div>
-
-</div>
 {{/each}}
 </div>
 
