@@ -27,4 +27,8 @@ router.get('/dashboard/deletecountry/:id', dashboard.deleteCountry);
 
 router.post('/travel/:id/updatecity/:cityid', travel.updateCity);
 
+import stats from './controllers/stats.js';
+router.get('/stats', stats.createView);
+
+
 export default router;

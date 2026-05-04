@@ -17,22 +17,20 @@
           "city": "Madrid",
           "type": "Capital City",
           "popular": "museums",
-          "rating": 4,
-          "image": "madrid.jpg"
+          "rating": 5
         },
         {
           "id": "08",
-          "city": "Valencia",
+          "city": "Valenciaa",
           "type": "Coastal City",
           "popular": "Futuristic Architecture ",
-          "rating": 4,
-          "image": "valencia.jpg"
+          "rating": 4
         },
         {
           "id": "079674f0-7e91-4333-8785-571aaf068b88",
           "city": "segfbces",
           "type": "dsfds",
-          "rating": 4,
+          "rating": 2,
           "popular": "sdefsedf"
         }
       ]
@@ -46,7 +44,7 @@
           "city": "Rome",
           "type": "Capital City",
           "popular": "Colosseum",
-          "rating": null
+          "rating": 5
         },
         {
           "id": "11",
