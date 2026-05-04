@@ -66,9 +66,9 @@ const dashboard = {
       date: timestamp,
       destinations: [],
     };
-    TravelStore.addCountry(newCountry, request.files.picture, function() {
+    TravelStore.addCountry(newCountry);
     response.redirect("/dashboard");
-});
+  
 
 },
 
